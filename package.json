@@ -1,0 +1,28 @@
+{
+  "name": "trendybass",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Fashion that fits your style.",
+  "workspaces": [
+    "apps/*"
+  ],
+  "engines": {
+    "node": ">=24.15",
+    "npm": ">=11"
+  },
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "dev:web": "npm run dev -w @trendybass/web",
+    "dev:api": "npm run dev -w @trendybass/api",
+    "prepare:web": "npm run prepare:nuxt -w @trendybass/web",
+    "build": "npm run build -w @trendybass/web",
+    "preview": "npm run preview -w @trendybass/web",
+    "lint": "npm run lint --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "db:up": "docker compose up -d",
+    "db:down": "docker compose down",
+    "db:generate": "npm run db:generate -w @trendybass/api",
+    "db:migrate": "npm run db:migrate -w @trendybass/api"
+  }
+}

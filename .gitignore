@@ -1,0 +1,57 @@
+# Claude Code and other assistants (local only, never committed)
+CLAUDE.md
+CLAUDE.local.md
+AGENTS.md
+.claude/
+
+# Dependencies
+node_modules/
+
+# Nuxt / Nitro build output
+.nuxt/
+.output/
+.data/
+.nitro/
+.cache/
+dist/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Tests
+coverage/
+playwright-report/
+test-results/
+blob-report/
+
+# Local uploads and worker output
+apps/api/uploads/
+tmp/
+
+# Python (workers)
+__pycache__/
+*.pyc
+.venv/
+
+# Database
+pgdata/
+*.sqlite
+*.db
+
+# OS and editors
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
