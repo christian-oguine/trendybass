@@ -1,0 +1,12 @@
+{
+  "$comment": "Accepted npm audit advisories (high or critical) with a reason and an expiry date. CI fails when an entry expires, so it is reviewed again. See docs/security/accepted-risks.md.",
+  "advisories": [
+    {
+      "id": "GHSA-fc5q-39xc-vjpf",
+      "package": "picomatch",
+      "reason": "ReDoS needs an attacker-controlled glob pattern. picomatch is only used by build and dev tooling (Vite, rollup plugins, unplugin, file watcher) with patterns written in our own config. No visitor input reaches it. No fixed version exists yet (all versions up to 4.0.7 affected).",
+      "accepted": "2026-11-18",
+      "expires": "2026-12-18"
+    }
+  ]
+}
