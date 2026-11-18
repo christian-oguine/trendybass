@@ -14,6 +14,7 @@ Everything the Secure Software Development Lifecycle (SSDLC) asks us to write do
 | 2. Design | DPIA for high-risk features | [privacy/dpia-try-on.md](privacy/dpia-try-on.md) |
 | 3. Build | Coding rules | [ssdlc.md](ssdlc.md#3-build) |
 | 4. Verify | CI checks | [ssdlc.md](ssdlc.md#4-verify) and [.github/workflows/ci.yml](../.github/workflows/ci.yml) |
+| 4. Verify | Risks we accept for now, with review dates | [security/accepted-risks.md](security/accepted-risks.md) |
 | 5. Release | Release checklist | [release/release-checklist.md](release/release-checklist.md) |
 | 6. Operate | Incident response and breach notification | [security/incident-response.md](security/incident-response.md) |
 

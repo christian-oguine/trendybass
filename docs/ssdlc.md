@@ -54,7 +54,7 @@ Runs in CI on every push and merge request ([.github/workflows/ci.yml](../.githu
 |---|---|---|
 | Lint, type check, build | ESLint, tsc, vue-tsc, Nuxt | Now |
 | Unit and API tests | Vitest, Supertest | Now |
-| Dependency audit | npm audit (production packages, high and above) | Now |
+| Dependency audit | `npm run audit`: npm audit on production packages, fails on high and above unless accepted with a reason and expiry in [.github/audit-allowlist.json](../.github/audit-allowlist.json) | Now |
 | Dependency updates | Dependabot, 7-day cooldown | Now |
 | Secret scanning | gitleaks | Now |
 | Static analysis | Semgrep (JavaScript, TypeScript, Node.js, secrets, Docker, GitHub Actions) | Now |
