@@ -1,0 +1,18 @@
+{
+  // Node 24 runs these TypeScript files directly (no build step). That is why imports end in .ts
+  // and only syntax that can simply be stripped is allowed (no enums, no namespaces).
+  "compilerOptions": {
+    "target": "ES2024",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "verbatimModuleSyntax": true,
+    "erasableSyntaxOnly": true,
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "types": ["node"]
+  },
+  "include": ["src", "tests", "drizzle.config.ts", "vitest.config.ts", "eslint.config.js"]
+}
