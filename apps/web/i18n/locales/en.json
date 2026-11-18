@@ -1,0 +1,12 @@
+{
+  "home": {
+    "title": "Fashion that fits your style",
+    "description": "Clothes, shoes and accessories you can try on with AI, with size advice from your own measurements.",
+    "tagline": "Fashion that fits your style."
+  },
+  "error": {
+    "notFoundTitle": "Page not found",
+    "genericTitle": "Something went wrong",
+    "backHome": "Home"
+  }
+}

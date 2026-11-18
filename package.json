@@ -20,6 +20,7 @@
     "lint": "npm run lint --workspaces --if-present",
     "typecheck": "npm run typecheck --workspaces --if-present",
     "test": "npm run test --workspaces --if-present",
+    "audit": "node scripts/audit.mjs",
     "db:up": "docker compose up -d",
     "db:down": "docker compose down",
     "db:generate": "npm run db:generate -w @trendybass/api",

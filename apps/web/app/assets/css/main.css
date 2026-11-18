@@ -1,0 +1,46 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@theme static {
+  /* Fonts (README 11.3). Downloaded at build time by Nuxt Fonts and served from our own domain:
+     no Google Fonts requests at runtime. */
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Fraunces', ui-serif, Georgia, serif;
+
+  /* Colour tokens (README 11.2). Contrast on paper: ink 17.6:1, muted 6.5:1, accent 8.2:1, sale 6.3:1, success 5.1:1. */
+  --color-ink: #141414;
+  --color-paper: #FAFAF7;
+  --color-image: #F2F1EE;
+  --color-muted: #5C5B57;
+  --color-accent: #3B2FC9;
+  --color-sale: #B42318;
+  --color-success: #1E7A4C;
+  --color-line: #D6D3CC;
+}
+
+:root {
+  /* Interim Nuxt UI mapping until the design phase adds the full brand scale.
+     Primary = indigo-700 (#4338CA, 7.6:1 on paper), close to the accent. Main buttons use color="neutral" (ink). */
+  --ui-primary: var(--ui-color-primary-700);
+  --ui-bg: var(--color-paper);
+  --ui-radius: 0.375rem;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  text-rendering: optimizeLegibility;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
