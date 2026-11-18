@@ -1,0 +1,16 @@
+# Code owners are asked to review pull requests that touch their files.
+# The last matching line wins. Add owners per module as the team grows.
+
+# Default owner for everything
+*                              @christian-oguine
+
+# Security-sensitive areas (keep an explicit owner when more people join)
+/.github/                      @christian-oguine
+/SECURITY.md                   @christian-oguine
+/docs/security/                @christian-oguine
+/docs/privacy/                 @christian-oguine
+/apps/api/src/db/              @christian-oguine
+/apps/api/src/shared/          @christian-oguine
+/infra/                        @christian-oguine
+/scripts/                      @christian-oguine
+/package-lock.json             @christian-oguine
